@@ -42,3 +42,10 @@ Add a kit with Qt version and compiler above.
 
 Now, you can build and run the Qt demos with tizen on i.Mx6 board.
 How to run tizen on i.Mx6 board? Please refer https://github.com/RayBloodworth/porting_tizen_to_imx6q
+
+To run Qt applications, you need set env below:
+export QT_ROOT=/usr/lib/qt5.7
+export LD_LIBRARY_PATH=$QT_ROOT/lib:/lib:/usr/lib
+export QT_QPA_PLATFORM_PLUGIN_PATH=$QT_ROOT/plugins/
+
+Enjoy it!
